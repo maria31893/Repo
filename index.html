@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Game Shop</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+
+</head>
+
+<body>
+    <div >
+    <!-- Start first navbar-->
+
+    <div class="navbar navbar-inverse navbar-fixed-top col-lg-12 col-md-12 col-sm-12 col-xs-25" style="width: 100%">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="width: 50%">
+
+            <ul class="nav navbar-nav">
+                <li>
+                    <span style="font-size:30px;cursor:pointer;color:white; display:inline-block" onclick="openNav()">&#9776;</span>
+
+                    <div id="mySidenav" class="sidenav">
+                        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+
+
+                        <a href="#" style="display:block;">
+                            <i class="fa fa-sign-in fa-lg" aria-hidden="true"> </i>
+                            Login
+                        </a>
+
+
+                        <div class="separator"></div>
+                        <a href="#">Categories</a>
+                        <a href="index.html">Highlights</a>
+                        <a href="#">Top</a>
+                        <a href="#">New</a>
+                        <a href="#">Recommended</a>
+                        <div class="separator"></div>
+
+
+                        <a href="#" style="display:block;">
+                            <i class="fa fa-question fa-lg" aria-hidden="true"></i>
+                            Help</a>
+
+
+                    </div>
+                </li>
+                <li>
+                    <i  class="icofont icofont-ui-game" aria-hidden="true"></i>
+                </li>
+                <li>
+                    <a class="navbar-brand" href="#">Games</a>
+                </li>
+
+            </ul>
+
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="width:50%">
+
+            <div class="navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control search-box" placeholder="Search">
+                </div>
+                <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- End first navbar-->
+
+    <!-- Start second navbar-->
+
+
+    <div class="secondNavbar">
+
+        <nav class="navbar-collapse container">
+
+            <ul class="nav navbar-nav navbar-left">
+                <li>
+                    <a href="blank.html">CATEGORIS</a>
+                </li>
+                <li class="selected">
+                    <a href="#">HIGHLIGHTS</a>
+                </li>
+                <li>
+                    <a href="blank.html">TOP</a>
+                </li>
+                <li>
+                    <a href="blank.html">NEW</a>
+                </li>
+                <li>
+                    <a href="blank.html">RECOMMENDED</a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </div>
+
+
+    <!-- End secon navbar-->
+
+    <!-- Start slideshow -->
+
+    <!-- Slideshow container -->
+    <div id="overlay" class="slideshow-container">
+
+        <!-- Full-width images with number -->
+        <div class="mySlides">
+            <img src="css/imgs/first.png" style="width:100%">
+            <div class="numbertext">1 / 4</div>
+        </div>
+
+        <div class="mySlides">
+            <img src="css/imgs/second.png" style="width:100%">
+            <div class="numbertext">2 / 4</div>
+
+        </div>
+
+        <div class="mySlides">
+            <img src="css/imgs/third.png" style="width:100%">
+            <div class="numbertext">3 / 4</div>
+        </div>
+
+        <div class="mySlides">
+            <img src="css/imgs/fourth.png" style="width:100%">
+            <div class="numbertext">4 / 4</div>
+        </div>
+
+
+
+    </div>
+    <br>
+
+    <!-- The dots under slideshow imgs -->
+    <div style="text-align:center">
+        <span class="dot " onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+
+    </div>
+    <!-- End slidshow -->
+
+
+    <!-- Start Games sections -->
+
+    <div class="games-section container">
+
+        <div class="action-and-adventure">
+            <div class="title-and-more">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 section-title">Action and Adventure</div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 more first-more" style="text-align: right;">MORE</div>
+            </div>
+
+            <div class="games-list-in-actionAndAdv">
+
+                <!-- here, games will be displayed from main.js using foor loop -->
+
+            </div>
+            <div class="rest-of-games" style="display:none;">
+
+                    <!-- here, the rest of the games will be displayed from main.js 
+                         once 'MORE' is clicked-->
+    
+            </div>
+           
+        </div>
+
+
+
+        <div class="casual-games">
+            <div class="title-and-more">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 section-title">Casual games</div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 more second-more" style="text-align: right;">MORE</div>
+            </div>
+
+            <div class="games-list-in-casualGames">
+
+                <!-- here, games will be displayed from main.js using foor loop -->
+
+            </div>
+           
+        </div>
+
+
+        <div class="puzzels">
+            <div class="title-and-more">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 section-title">Puzzles</div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 more third-more" style="text-align: right;">MORE</div>
+            </div>
+
+            <div class="games-list-in-puzzels">
+
+                <!-- here, games will be displayed from main.js using foor loop -->
+
+            </div>
+         
+        </div>
+        
+        
+
+    </div>
+
+
+    <!-- End Games sections -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</div>
+</body>
+
+</html>
